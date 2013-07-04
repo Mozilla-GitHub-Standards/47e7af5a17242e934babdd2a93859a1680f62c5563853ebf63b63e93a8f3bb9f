@@ -29,3 +29,7 @@ ENABLE_LIBRECOVERY := true
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
   persist.usb.serialno=$(PRODUCT_NAME)
+
+# Gaia currently needs to specify the default scale value manually or pictures
+# with correct resolution will not be applied.
+GAIA_DEV_PIXELS_PER_PX := 1.5
