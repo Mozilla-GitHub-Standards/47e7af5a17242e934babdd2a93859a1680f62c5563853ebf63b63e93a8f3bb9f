@@ -147,6 +147,7 @@ COMMON_LIBS="
 	libcm.so
 	libcameraservice.so
 	libcamera_client.so
+	libchromatix_ov5647_preview.so
 	libhwdevctl_client.so
 	libhwdevctlservice.so
 	libCommandSvc.so
