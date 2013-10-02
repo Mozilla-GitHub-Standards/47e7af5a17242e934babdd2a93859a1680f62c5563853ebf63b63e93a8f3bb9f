@@ -147,6 +147,7 @@ COMMON_LIBS="
 	libcm.so
 	libcameraservice.so
 	libcamera_client.so
+	libchromatix_ov5647_preview.so
 	libhwdevctl_client.so
 	libhwdevctlservice.so
 	libCommandSvc.so
@@ -247,6 +248,7 @@ COMMON_BINS="
 	callife
 	ath_supplicant
 	wpa_cli
+	vold
 	"
 copy_files "$COMMON_BINS" "system/bin" ""
 
@@ -280,7 +282,7 @@ COMMON_ATH6K="
 	"
 copy_files "$COMMON_ATH6K" "system/wifi/ath6k" "wifi"
 
-COMMON_ETC="init.qcom.bt.sh gps.conf"
+COMMON_ETC="init.qcom.bt.sh gps.conf external_sd.fstab internal_sd.fstab"
 copy_files "$COMMON_ETC" "system/etc" "etc"
 
 COMMON_AUDIO="
