@@ -191,7 +191,6 @@ COMMON_LIBS="
 	libgenlock.so
 	libgemini.so
 	libgps.utils.so
-	libril.so
 	libmmcamera_statsproc31.so
 	libmmcamera_image_stab.so
 	libmmcamera_frameproc.so
@@ -238,7 +237,6 @@ COMMON_BINS="
 	port-bridge
 	qmiproxy
 	qmuxd
-	rild
 	radish
 	rmt_storage
 	wlan_detect
