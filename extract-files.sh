@@ -222,6 +222,7 @@ COMMON_LIBS="
 
 copy_files "$COMMON_LIBS" "system/lib" ""
 
+# removed wiperiface
 COMMON_BINS="
 	akmd8963
 	akmd8975
@@ -242,7 +243,6 @@ COMMON_BINS="
 	wlan_detect
 	hwdevctlservice
 	gpu_dcvsd
-	wiperiface
 	callife
 	ath_supplicant
 	wpa_cli
