@@ -31,7 +31,7 @@ else
 fi
 
 case "$DEVICE_BUILD_ID" in
-msm7627a*)
+msm7627a*|IMM76I)
   FIRMWARE=ICS
   echo Found ICS firmware with build ID $DEVICE_BUILD_ID >&2
   ;;
@@ -191,7 +191,6 @@ COMMON_LIBS="
 	libgenlock.so
 	libgemini.so
 	libgps.utils.so
-	libril.so
 	libmmcamera_statsproc31.so
 	libmmcamera_image_stab.so
 	libmmcamera_frameproc.so
@@ -223,6 +222,7 @@ COMMON_LIBS="
 
 copy_files "$COMMON_LIBS" "system/lib" ""
 
+# removed wiperiface
 COMMON_BINS="
 	akmd8963
 	akmd8975
@@ -238,13 +238,11 @@ COMMON_BINS="
 	port-bridge
 	qmiproxy
 	qmuxd
-	rild
 	radish
 	rmt_storage
 	wlan_detect
 	hwdevctlservice
 	gpu_dcvsd
-	wiperiface
 	callife
 	ath_supplicant
 	wpa_cli
